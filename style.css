@@ -403,7 +403,7 @@ font-size: 25px;
     overflow: hidden;
     margin-right: -50px;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 25px;
     padding-right: 0px;
     margin-left: 0px;
   }
@@ -557,7 +557,7 @@ font-size: 15px;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    font-weight: 1000;
+    font-weight: 900;
   }
   
   .messages_area {
@@ -570,7 +570,7 @@ font-size: 15px;
   }
 
   .messages_content {
-    font-weight: 1000;
+    font-weight: 750;
   }
 
   .messages_left .span-1 {
