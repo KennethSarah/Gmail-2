@@ -134,7 +134,7 @@ const data = [
   },
 ];
 
-const btnEl = document.getElementById("buttonEl");
+/* const btnEl = document.getElementById("buttonEl");
 const formAl = document.getElementById("nav_container");
 const messagesArea = document.getElementById("main_content")
 
@@ -145,7 +145,7 @@ function toggle() {
   messagesArea.style.width = "95%"
   messagesArea.style.overflow = "auto"
   messagesArea.style.paddingRight = "100px"
-}
+} */
 
 const formEl = document.getElementById("signupFrm");
 const formBtn = document.getElementById("compose-btn");
