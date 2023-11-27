@@ -28,7 +28,8 @@
       <header class="header">
         <div class="header_container">
             <div>
-              <i class="bi bi-list i-class" id="buttonEl" onclick="toggle()" ></i>
+              <i class="bi bi-list i-class myDiv" id="buttonEl" onclick="toggle()" ></i>
+              
         <span><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="" width="110" class="gmail-icon"></span>
         </div>
         
@@ -60,72 +61,73 @@
        
       <nav>
         <div class="navel">
-          <div class="nav-container">
+          <div class="nav-container ">
              
-      <div class="nav-container-item">
-          <i class="bi bi-envelope"></i>
+      <div class="nav-container-item myDiv" onclick="alertMe()">
+          <i class="bi bi-envelope" ></i>
           <p class="mail-chat">Mail</p>
       </div>
-      <div class="nav-container-item">
+      <div class="nav_container" id="nav_container" >
+        <div class="nav_top">
+          <button id="compose-btn"><i class="bi bi-pencil-fill"></i>&nbsp;Compose</button>
+        </div>
+        <div class="nav_middle">
+          <ul>
+            <li>
+              <a href="#">
+                
+                <i class="bi bi-inbox-fill"></i>
+                Inbox
+              </a>
+              <span class="icon-a">4</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-star"></i>
+                Starred
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-clock"></i>
+                Snoozed
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-send"></i>
+                Sent
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-file-earmark"></i>
+                Draft
+              </a>
+              
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-chevron-down"></i>
+                More
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_bottom">Labels<i class="bi bi-plus hover plus"></i>
+        </div>
+      </div>
+      <div class="nav-container-item nav-item">
           <i class="bi bi-chat-left"></i>
           <p class="mail-chat">Chat</p>
       </div>
-      <div class="nav-container-item">
+      <div class="nav-container-item nav-item">
           <i class="bi bi-people-fill"></i>
           <p class="mail-chat-1">Spaces</p>
       </div>
           </div>
         </div>
-        <div class="nav_container" id="nav_container" >
-          <div class="nav_top">
-            <button id="compose-btn" onclick="alertMe()"><i class="bi bi-pencil-fill"></i>&nbsp;Compose</button>
-          </div>
-          <div class="nav_middle">
-            <ul>
-              <li>
-                <a href="#">
-                  
-                  <i class="bi bi-inbox-fill"></i>
-                  Inbox
-                </a>
-                <span class="icon-a">4</span>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bi bi-star"></i>
-                  Starred
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bi bi-clock"></i>
-                  Snoozed
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bi bi-send"></i>
-                  Sent
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bi bi-file-earmark"></i>
-                  Draft
-                </a>
-                
-              </li>
-              <li>
-                <a href="#">
-                  <i class="bi bi-chevron-down"></i>
-                  More
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav_bottom">Labels<i class="bi bi-plus hover plus"></i>
-          </div>
-        </div>
+        
       </nav>
       
       <main class="main_content" id="main_content">
