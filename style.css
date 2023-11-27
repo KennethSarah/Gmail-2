@@ -24,8 +24,6 @@
   }
 
   
-
-@media only screen and (min-width: 1080px) {
   p {
     cursor: pointer;
   }
@@ -34,7 +32,7 @@
     height: 100vh;
     display: grid;
     grid-template-areas: "header header header" "nav main-content sidebar" "nav main-content sidebar";
-    grid-template-columns: 165px 4fr 70px;
+    grid-template-columns: 109px 4fr 50px;
     grid-template-rows: 70px 1fr;
     background-color: rgba(234, 241, 251, 1);
   }
@@ -404,11 +402,10 @@ font-size: 25px;
     background-color: rgba(234, 241, 251, 1);
     overflow: hidden;
     margin-right: -50px;
-    width: 109%;
-    border-radius: 5px;
-    padding-right: 40px;
-    margin-left: -50px;
-    
+    width: 100%;
+    border-radius: 50px;
+    padding-right: 0px;
+    margin-left: 0px;
   }
   
   .content-icon,
@@ -752,5 +749,4 @@ font-size: 15px;
 
 .input:focus {
   border: 2px solid purple;
-}
 }
