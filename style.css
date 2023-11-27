@@ -34,7 +34,7 @@
     height: 100vh;
     display: grid;
     grid-template-areas: "header header header" "nav main-content sidebar" "nav main-content sidebar";
-    grid-template-columns: 165px 4fr 60px;
+    grid-template-columns: 165px 4fr 50px;
     grid-template-rows: 70px 1fr;
     background-color: rgba(234, 241, 251, 1);
   }
@@ -171,7 +171,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    height: 33px;
+    height: 20px;
     
   }
 
@@ -443,7 +443,7 @@ font-size: 25px;
 
   .navel {
     position: fixed;
-top: 83px;
+top: 70px;
 height: 100vh;
 width: 5%;
 background-color: rgba(246, 248, 252, 1);
@@ -463,10 +463,13 @@ font-size: 15px;
   }
 
 .bi-list {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
+  .gmail-icon {
+    margin-bottom: 0;
+  }
 
   .mail-chat {
     margin-left: 5px;
