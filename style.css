@@ -405,9 +405,10 @@ font-size: 25px;
     overflow: hidden;
     margin-right: -50px;
     width: 105%;
-    border-radius: 35px;
-    padding-right: 50px;
+    border-radius: 5px;
+    padding-right: 40px;
     margin-left: -50px;
+    
   }
   
   .content-icon,
