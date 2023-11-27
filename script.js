@@ -143,6 +143,7 @@ function toggle() {
   formAl.style.display = "block"
   messagesArea.style.marginLeft = "210px"
   messagesArea.style.width = "95%"
+  messagesArea.style.overflow = "auto"
   messagesArea.style.paddingRight = "100px"
 }
 

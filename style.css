@@ -289,9 +289,9 @@ nav {
     height: 50%;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 50px;
     padding: 12px;
-    gap: 40px;
+    gap: px;
     display: none;
     font-size: 15px;
   }
@@ -381,10 +381,7 @@ nav {
  
   }
 
-  .nav_container1 {
-    display: block;
-  }
-  
+ 
   
   .nav_bottom {
     display: flex;
@@ -401,16 +398,16 @@ font-size: 25px;
   }
   
   .main_content {
-    margin-top: 32px;
+    margin-top: 10px;
     margin-bottom: 10px;
-   
+   height: 100%;
     background-color: rgba(234, 241, 251, 1);
     overflow: hidden;
-    margin-right: 300px;
+    margin-right: -50px;
     width: 105%;
     border-radius: 35px;
     padding-right: 50px;
-    margin-left: -40px;
+    margin-left: -50px;
   }
   
   .content-icon,
@@ -568,6 +565,7 @@ font-size: 15px;
   .messages_area {
     height: 80vh;
     overflow: auto;
+    word-break:keep-all;
     background-color: white;
     overflow-y: scroll;
     border-top: 1px solid black;
