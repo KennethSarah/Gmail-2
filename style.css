@@ -34,7 +34,7 @@
     height: 100vh;
     display: grid;
     grid-template-areas: "header header header" "nav main-content sidebar" "nav main-content sidebar";
-    grid-template-columns: 165px 4fr 50px;
+    grid-template-columns: 165px 4fr 70px;
     grid-template-rows: 70px 1fr;
     background-color: rgba(234, 241, 251, 1);
   }
@@ -404,7 +404,7 @@ font-size: 25px;
     background-color: rgba(234, 241, 251, 1);
     overflow: hidden;
     margin-right: -50px;
-    width: 105%;
+    width: 109%;
     border-radius: 5px;
     padding-right: 40px;
     margin-left: -50px;
