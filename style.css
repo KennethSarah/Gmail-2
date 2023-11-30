@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Epilogue:wght@500;700&family=Fugaz+One&family=Heebo:wght@300&family=Inter:wght@200;300;400;500;700&family=Josefin+Sans:wght@300;700&family=Karla:wght@400;700&family=Lora:ital@0;1&family=Montserrat:wght@600;700&family=Playfair+Display:wght@500;600&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&family=Space+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Epilogue:wght@500;700&family=Fugaz+One&family=Heebo:wght@300&family=Inter:wght@200;300;400;500;700&family=Josefin+Sans:wght@300;700&family=Karla:wght@400;700&family=Lora:ital@0;1&family=Montserrat:wght@600;700&family=Open+Sans:wght@500&family=Playfair+Display:wght@500;600&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&family=Space+Mono:wght@700&display=swap');
 
+@import url(https://db.onlinewebfonts.com/c/ae7951c47ee13ee1f50d9cde9da242ee?family=Google+Sans);
+@import url(https://db.onlinewebfonts.com/c/0e00b32e02d1a4fb9a65ecbe64f04589?family=RobotoDraft);
+@import url(https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto);
 
 *, *::before, *::after {
-  font-family: Arial, Helvetica,'Roboto','Open Sans', sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: "Google Sans", "RobotoDraft", "Roboto", Arial, Helvetica, sans-serif;
     box-sizing: content-box;
+  }
+
+  body {
+    
+    padding: 0;
+    background-color: rgba(234, 241, 251, 1);
+    margin: 0;
   }
   
   :root {
@@ -16,14 +22,7 @@
     --light-blue: rgb(202, 229, 250);
   }
   
-  body {
-    font-family: Arial, Helvetica,'Roboto','Open Sans', sans-serif;
-    background-color: rgba(234, 241, 251, 1);
-    overflow: hidden;
-   
-  }
 
-  
   p {
     cursor: pointer;
   }
@@ -224,6 +223,7 @@
     margin-bottom: 5px;
     font-size: 15px;
     position: relative;
+    font-family: inherit;
     
   }
 
@@ -657,8 +657,7 @@ font-size: 15px;
 
 .signupFrm {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
   height: 100vh;
   z-index: 7;
   display: none;
@@ -668,8 +667,9 @@ font-size: 15px;
 .form {
   background-color: white;
   width: 400px;
-  border-radius: 8px;
-  padding: 20px 40px;
+  height: 800px;
+  border-radius: 20px;
+  padding: 0px 0px;
   box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
 }
 
@@ -680,9 +680,41 @@ font-size: 15px;
 
 .inputContainer {
   position: relative;
-  height: 45px;
-  width: 90%;
-  margin-bottom: 17px;
+ font-size: 23px;
+  display: flex;
+  margin-left: 0px;
+  margin-top: 27px;
+ line-height: 2.5;
+  font-family: inherit;
+}
+
+.formEl {
+  width: 400px;
+  height: 800px;
+  border-radius: 20px;
+  background-color: black;
+  
+}
+
+.inputContainer ul {
+  list-style-type: none;
+}
+
+.icon-a {
+  margin-left: 150px;
+}
+
+.icon-c {
+  margin-left: 200px;
+}
+
+.inputContainer ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.inputContainer ul li a i {
+  margin-left: 20px;
 }
 
 .input {
@@ -753,4 +785,49 @@ font-size: 15px;
 
 .input:focus {
   border: 2px solid purple;
+}
+
+
+.container {
+ 
+  display: none;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.formId {
+  margin-top: 30px;
+  margin-left: 2px;
+  background-color: rgba(246, 248, 252, 1);
+  width: 400px;
+  height: 800px;
+  border-radius: 20px;
+}
+
+.container-1 {
+  display: flex;
+  padding: 29px;
+  font-size: 30px;
+  width: 100%;
+  background-color: rgba(234, 241, 251, 1);
+  height: 10%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container-1 button {
+  border: none;
+  background-color: rgba(234, 241, 251, 1);
+}
+
+.container-2 a{
+  text-decoration: none;
+}
+
+.formId-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
 }

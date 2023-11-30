@@ -34,9 +34,9 @@
         </div>
         
         <div class="search">
-            <span><i class="bi bi-search" title="Search"></i></span>
+            <span><i class="bi bi-search hover" title="Search"></i></span>
             <input type="text" placeholder="Search in emails">
-            <span><i class="bi bi-sliders2 " title="Filter"></i></span>
+            <span><i class="bi bi-sliders2 hover " title="Filter"></i></span>
         </div>
         
         
@@ -44,10 +44,10 @@
         <div class="menu-icons">
            
                 <button class="active-button">
-                    <span> <i class="bi bi-circle"></i> Active Status</span>
+                    <span> <i class="bi bi-circle hover"></i> Active Status</span>
                 </button>
                 
-            <i class="bi bi-question-circle i-class" title="Support"></i>
+            <i class="bi bi-question-circle i-class hover" title="Support"></i>
             <i class="bi bi-gear i-class" title="Settings"></i>
             <i class="bi bi-grid-3x3-gap-fill i-class"></i>
             <span>
@@ -63,7 +63,7 @@
         <div class="navel">
           <div class="nav-container ">
              
-      <div class="nav-container-item myDiv" onclick="alertMe()">
+      <div class="nav-container-item myDiv" onmouseover="alertMe()" onmouseout="hide()">
           <i class="bi bi-envelope" ></i>
           <p class="mail-chat">Mail</p>
       </div>
@@ -114,14 +114,14 @@
             </li>
           </ul>
         </div>
-        <div class="nav_bottom">Labels<i class="bi bi-plus hover plus"></i>
+        <div class="nav_bottom">Labels</i>
         </div>
       </div>
-      <div class="nav-container-item nav-item">
-          <i class="bi bi-chat-left"></i>
+      <div class="nav-container-item nav-item" onmouseover="showMe()" onmouseout="hideMe()" id="navItem">
+          <i class="bi bi-chat-left"></i> 
           <p class="mail-chat">Chat</p>
       </div>
-      <div class="nav-container-item nav-item">
+      <div class="nav-container-item nav-item" onmouseover="showUs()" onmouseout="hideUs()" id="nav-Item-1">
           <i class="bi bi-people-fill"></i>
           <p class="mail-chat-1">Spaces</p>
       </div>
@@ -216,32 +216,76 @@
         <input type="text" placeholder="Working">
       </form>
 
-      <div class="signupFrm" id="signupFrm">
+      <div class="signupFrm formId" id="signupFrm">
         <form action="" class="form">
-          <h1 class="title">Compose</h1>
-    
+          <div class="container-1">
+          <button><i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Compose</button>
+        </div>
           <div class="inputContainer">
-            <input type="text" class="input" placeholder="a">
-            <label for="" class="label">To</label>
+            <ul>
+              <li>
+                <a href="#">
+                  
+                  <i class="bi bi-inbox-fill"></i>&nbsp; &nbsp;
+                  Inbox
+                </a>
+                <span class="icon-a">4</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-star">&nbsp; &nbsp;</i>Starred
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-clock"></i>&nbsp; &nbsp;Snoozed
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-send"></i>&nbsp; &nbsp;
+                  Sent
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-file-earmark"></i>&nbsp; &nbsp;
+                  Draft
+                </a>
+                
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-chevron-down"></i>&nbsp; &nbsp;
+                  More
+                </a>
+              </li>
+
+              <li>Label 
+                <span class="icon-c "><i class="bi bi-plus"></i></span></li>
+            </ul>
           </div>
     
           <div class="inputContainer">
-            <input type="text" class="input" placeholder="a">
-            <label for="" class="label">From</label>
+            
           </div>
     
           <div class="inputContainer">
-            <input type="text" class="input" placeholder="a">
-            <label for="" class="label">Message</label>
+           
           </div>
-    
-<!--           <div class="inputContainer">
-            <input type="text" class="input" placeholder="a">
-            <label for="" class="label">Password</label>
-          </div> -->
-    
-          <input type="submit" class="submitBtn" value="Send">
+          
         </form>
+      </div>
+
+      <div class="signupFrm formId" id="container">
+       
+       <div class="container-1"><button><i class="bi bi-chat-left"></i>&nbsp; New Chat</button></div>
+       <div class="formId-1">
+       <div class="container-2">
+        <p>No Conversations</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Find a chat</a>
+       </div>
+
       </div>
     </section>
   </body>

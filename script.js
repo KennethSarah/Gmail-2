@@ -150,13 +150,33 @@ function toggle() {
 const formEl = document.getElementById("signupFrm");
 const formBtn = document.getElementById("compose-btn");
 
+
 function alertMe() {
 formEl.style.display = "block";
 }
 
-formBtn.addEventListener("click", function() {
-  
-});
+function hide() {
+  formEl.style.display = "none"
+}
+
+const conBtn = document.getElementById("navItem")
+const conTain = document.getElementById("container");
+
+function showMe() {
+  conTain.style.display = "block"
+}
+
+function hideMe() {
+  conTain.style.display ="none"
+}
+
+function showUs() {
+  conTain.style.display = "block"
+}
+
+function hideUs() {
+  conTain.style.display = "none"
+}
 
 const messages = document.querySelector(".messages_area");
 
